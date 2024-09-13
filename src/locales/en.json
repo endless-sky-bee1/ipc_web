@@ -1,0 +1,15 @@
+{
+    "config": {
+      "returnToLive": "Return to Live Stream",
+      "title": "Camera Configuration",
+      "resolution": "Resolution",
+      "framerate": "Frame Rate",
+      "bitrate": "Bitrate (kbps)",
+      "enableAudio": "Enable Audio",
+      "saveChanges": "Save Changes",
+      "loading": "Loading configuration...",
+      "saveSuccess": "Configuration saved successfully!",
+      "saveError": "Error saving configuration. Please try again.",
+      "loadError": "Error loading configuration. Please refresh the page."
+    }
+  }

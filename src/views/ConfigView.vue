@@ -1,7 +1,7 @@
 <template>
     <div class="config-view">
       <div class="menu">
-        <ConfigMenu @menuSelect="handleMenuSelect" />
+        <ConfigMenu @menuSelect="handleMenuSelect" @goToLiveStream="goToLiveStream" />
       </div>
       <div class="content">
         <component :is="currentComponent"></component>
@@ -33,6 +33,9 @@
     methods: {
       handleMenuSelect(component) {
         this.currentComponent = component
+      },
+      goToLiveStream() {
+        this.$router.push('/') // 假设直播页面的路由是根路径 '/'
       }
     }
   }
@@ -49,5 +52,21 @@
   .content {
     flex-grow: 1;
     padding: 20px;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .back-button:hover {
+    background-color: #0056b3;
   }
   </style>
